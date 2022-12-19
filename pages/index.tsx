@@ -14,7 +14,7 @@ export default function HomePage() {
       </h2>
       <p className={'description'}>
         Get started by editing&nbsp;
-        <code className={'code'}>pages/index.jsx</code>
+        <code className={'code'}>pages/index.tsx</code>
       </p>
 
     </MainLayout>

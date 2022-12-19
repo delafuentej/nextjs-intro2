@@ -1,6 +1,7 @@
 import { MainLayout } from '../../components/layouts/MainLayout';
 import Link from 'next/link';
 import { DarkLayout } from '../../components/layouts/DarkLayout';
+import { ReactNode } from 'react';
 
 
 export default function About() {
@@ -16,7 +17,7 @@ export default function About() {
         </h2>
         <p className={'description'}>
           Get started by editing&nbsp;
-          <code className={'code'}>pages/about/index.jsx</code>
+          <code className={'code'}>pages/about/index.tsx</code>
         </p>
 
 
@@ -29,7 +30,7 @@ export default function About() {
   )
 }
 //multiple nested layouts
-About.getLayout = function getLayout( page ){
+About.getLayout = function getLayout( page:ReactNode ){
   return(
     <MainLayout>
       <DarkLayout>
